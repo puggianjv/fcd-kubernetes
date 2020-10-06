@@ -15,5 +15,5 @@ func response(w http.ResponseWriter, req *http.Request) {
 }
 
 func greeting(s string) string {
-	return fmt.Sprintf("<b>%s</b>.", s)
+	return fmt.Sprintf("<b>%s</b>", s)
 }
