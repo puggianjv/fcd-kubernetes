@@ -1,3 +1,3 @@
 # fcd-kubernetes
 
-Imagem go: jpuggian/go-greeting-api
+Go image: jpuggian/go-greeting-api
