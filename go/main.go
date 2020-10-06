@@ -1,8 +1,8 @@
 package main
 
 import (
-    "fmt"
-    "net/http"
+	"fmt"
+	"net/http"
 )
 
 func main() {
@@ -11,7 +11,7 @@ func main() {
 }
 
 func response(w http.ResponseWriter, req *http.Request) {
-	fmt.Fprintf(w, greeting(req.URL.Path[1:]))
+	fmt.Fprintf(w, greeting("Code.education Rocks!"))
 }
 
 func greeting(s string) string {
