@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+ name: nginx-conf
+data: 
+ nginx.conf: |
+
+  server {
+   listen 80;
+   index index.php index.html;
+   root /usr/share/nginx/html;
+
+   return 200 'Code.education Rocks';
+   add_header Content-Type text/plain;
+  }
