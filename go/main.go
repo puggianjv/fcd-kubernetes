@@ -7,7 +7,7 @@ import (
 
 func main() {
 	http.HandleFunc("/", response)
-	http.ListenAndServe(":8090", nil)
+	http.ListenAndServe(":80", nil)
 }
 
 func response(w http.ResponseWriter, req *http.Request) {
@@ -15,5 +15,5 @@ func response(w http.ResponseWriter, req *http.Request) {
 }
 
 func greeting(s string) string {
-	return fmt.Sprintf("<b>%s</b>", s)
+	return fmt.Sprintf("<b>%s</b>.", s)
 }

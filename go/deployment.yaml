@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: go-greeting-api
+spec:
+ selector:
+  matchLabels:
+   app: go-greeting-api
+   version: v1
+ template:
+  metadata: 
+   labels:
+    app: go-greeting-api
+    version: v1
+  spec:
+   containers:
+   - name: go-greeting-api
+     image: jpuggian/go-greeting-api
+     ports:
+     - containerPort: 8090
